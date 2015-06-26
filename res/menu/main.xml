@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.com.Interfaces.Avanzadas.MainActivity" >
+
+    <item
+        android:id="@+id/action_fav"
+        android:title="@string/action_fav"
+        app:showAsAction="always"
+        android:icon="@drawable/rating_not_important"
+        />
+     <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_share"
+        />
+     
+     <item
+	    android:id="@+id/action_buscar"
+	    android:title="@string/action_buscar"
+	    android:icon="@drawable/ic_action_share"
+	    app:actionViewClass="android.support.v7.widget.SearchView"
+	    app:showAsAction="always" />
+     <item
+	    android:id="@+id/action_dialog"
+	    android:title="@string/action_dialog"
+	    app:showAsAction="never" />
+    
+
+</menu>

@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	  
+	  <ImageView
+        android:id="@+id/hotel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Imagen_hotel"
+        android:padding="5dp"
+        android:src="@drawable/hotel1" />    
+	  	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:id="@+id/layout_widget">
+	        <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:text="@string/msg_txt"/>
+	        <Spinner 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="match_parent"
+	            android:drawSelectorOnTop="true"
+	            android:entries="@array/array_op"/>
+	    </LinearLayout>
+	    <ToggleButton
+	        android:id="@+id/togle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:textOn="@string/togle_yes"
+	        android:textOff="@string/togle_no"
+	        android:onClick="toggle_action">
+	        
+	    </ToggleButton>
+	  
+	</LinearLayout>
+    
+
+</ScrollView>
